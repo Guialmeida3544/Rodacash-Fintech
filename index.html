@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RodaCash | Controle financeiro para motoristas</title>
+
+  <!-- Tailwind CSS via CSS CDN: atende ao uso do framework sem JavaScript próprio no projeto. -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- CSS separado, conforme solicitado na atividade. -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero-section">
+      <header class="topbar">
+        <a href="#" class="brand-area" aria-label="Página inicial RodaCash">
+          <span class="brand-icon">R$</span>
+          <div>
+            <strong>RodaCash</strong>
+            <small>Fintech para motoristas</small>
+          </div>
+        </a>
+
+        <nav class="nav-links" aria-label="Navegação principal">
+          <a href="#resumo">Resumo</a>
+          <a href="#ganhos">Ganhos</a>
+          <a href="#custos">Custos</a>
+        </nav>
+      </header>
+
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">controle simples para quem roda todos os dias</span>
+          <h1>Saiba quanto você ganhou, gastou e lucrou em cada dia de trabalho.</h1>
+          <p>
+            O RodaCash ajuda motoristas de aplicativo a registrar faturamento, combustível,
+            aluguel do carro e metas de lucro em uma única tela clara e responsiva.
+          </p>
+
+          <div class="hero-actions">
+            <a class="primary-button" href="#resumo">Ver painel</a>
+            <a class="secondary-button" href="#lancamento">Lançamento rápido</a>
+          </div>
+        </div>
+
+        <aside class="phone-card" aria-label="Prévia mobile do aplicativo RodaCash">
+          <div class="phone-speaker"></div>
+          <div class="phone-screen">
+            <div class="mini-header">
+              <span>Hoje</span>
+              <strong>R$ 482,90</strong>
+            </div>
+
+            <div class="mini-chart" aria-hidden="true">
+              <span style="height: 42%"></span>
+              <span style="height: 64%"></span>
+              <span style="height: 55%"></span>
+              <span style="height: 88%"></span>
+              <span style="height: 70%"></span>
+            </div>
+
+            <div class="mini-list">
+              <div><span>Uber</span><strong>R$ 312,40</strong></div>
+              <div><span>99</span><strong>R$ 170,50</strong></div>
+              <div><span>Combustível</span><strong>-R$ 96,00</strong></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="resumo" class="dashboard-section">
+      <div class="section-title">
+        <span>Painel do motorista</span>
+        <h2>Resumo financeiro do dia</h2>
+      </div>
+
+      <div class="kpi-grid">
+        <article class="kpi-card">
+          <p>Faturamento</p>
+          <strong>R$ 482,90</strong>
+          <span class="positive">+12% acima da meta</span>
+        </article>
+
+        <article class="kpi-card">
+          <p>Custos</p>
+          <strong>R$ 156,00</strong>
+          <span class="negative">combustível + alimentação</span>
+        </article>
+
+        <article class="kpi-card">
+          <p>Lucro estimado</p>
+          <strong>R$ 326,90</strong>
+          <span class="positive">R$ 40,86 por hora</span>
+        </article>
+
+        <article class="kpi-card">
+          <p>Quilometragem</p>
+          <strong>118 km</strong>
+          <span>R$ 4,09 por km bruto</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <article id="ganhos" class="panel-card earnings-card">
+        <div class="panel-header">
+          <div>
+            <span>Ganhos por app</span>
+            <h3>Distribuição do faturamento</h3>
+          </div>
+          <strong>R$ 482,90</strong>
+        </div>
+
+        <div class="progress-list">
+          <div class="progress-item">
+            <div><span>Uber</span><strong>65%</strong></div>
+            <div class="progress-track"><span class="progress-bar w-65"></span></div>
+          </div>
+          <div class="progress-item">
+            <div><span>99</span><strong>28%</strong></div>
+            <div class="progress-track"><span class="progress-bar w-28"></span></div>
+          </div>
+          <div class="progress-item">
+            <div><span>Corridas particulares</span><strong>7%</strong></div>
+            <div class="progress-track"><span class="progress-bar w-7"></span></div>
+          </div>
+        </div>
+      </article>
+
+      <article id="custos" class="panel-card costs-card">
+        <div class="panel-header">
+          <div>
+            <span>Controle de custos</span>
+            <h3>Gastos registrados</h3>
+          </div>
+        </div>
+
+        <div class="cost-list">
+          <div><span>Combustível</span><strong>R$ 96,00</strong></div>
+          <div><span>Alimentação</span><strong>R$ 35,00</strong></div>
+          <div><span>Lavagem</span><strong>R$ 25,00</strong></div>
+        </div>
+      </article>
+    </section>
+
+    <section id="lancamento" class="form-section">
+      <div class="panel-card form-card">
+        <div class="section-title compact">
+          <span>Lançamento rápido</span>
+          <h2>Registrar nova movimentação</h2>
+        </div>
+
+        <form class="entry-form" action="#" method="post">
+          <label>
+            Tipo
+            <select name="tipo" aria-label="Tipo de movimentação">
+              <option>Entrada</option>
+              <option>Saída</option>
+            </select>
+          </label>
+
+          <label>
+            Categoria
+            <select name="categoria" aria-label="Categoria da movimentação">
+              <option>Corrida Uber</option>
+              <option>Corrida 99</option>
+              <option>Combustível</option>
+              <option>Alimentação</option>
+            </select>
+          </label>
+
+          <label>
+            Valor
+            <input type="text" name="valor" placeholder="Ex.: R$ 120,00" />
+          </label>
+
+          <label>
+            Observação
+            <input type="text" name="observacao" placeholder="Ex.: abastecimento do turno" />
+          </label>
+
+          <button type="button" class="primary-button form-button">Salvar lançamento</button>
+        </form>
+      </div>
+
+      <aside class="insight-card">
+        <span>Dica do RodaCash</span>
+        <h3>Meta de hoje quase batida</h3>
+        <p>
+          Faltam R$ 67,10 para atingir sua meta diária de R$ 550,00. Mantendo a média atual,
+          você alcança o objetivo em aproximadamente 1h20 de trabalho.
+        </p>
+      </aside>
+    </section>
+
+    <footer class="footer-area">
+      <p>RodaCash - Projeto Fintech desenvolvido com HTML, CSS e Tailwind CSS.</p>
+      <p>Layout responsivo para desktop e dispositivos móveis.</p>
+    </footer>
+  </main>
+</body>
+</html>
