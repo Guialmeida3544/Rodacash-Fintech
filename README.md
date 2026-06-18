@@ -10,7 +10,7 @@ Tela única desenvolvida para a atividade avaliativa de HTML, CSS e Tailwind CSS
 
 ## Link do repositório
 
-https://github.com/Guialmeida3544/Fintechrodacash
+(https://github.com/Guialmeida3544/Rodacash-Fintech)
 
 ## Como abrir
 
