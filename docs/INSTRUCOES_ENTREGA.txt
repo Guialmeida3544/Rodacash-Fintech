@@ -1,0 +1,13 @@
+INSTRUÇÕES PARA ENTREGA
+
+1. Confirme que o arquivo index.html abre corretamente no navegador.
+2. Envie para a plataforma um arquivo ZIP contendo:
+   - index.html
+   - pasta css com o arquivo styles.css
+   - pasta docs com o PDF LINK_GITHUB_RODACASH.pdf
+   - README.md
+3. O PDF já contém o link público do repositório GitHub:
+   https://github.com/Guialmeida3544/Fintechrodacash
+
+IMPORTANTE:
+O repositório do GitHub deve ficar público e, de preferência, com os arquivos do projeto extraídos, não somente como um ZIP dentro do repositório.
